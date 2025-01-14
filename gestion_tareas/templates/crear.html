@@ -1,0 +1,16 @@
+<!-- Template para creaer tareas -->
+
+
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2 class="title">Crear Tareas</h2>
+
+<form class="form-crear" method="post">
+    {% csrf_token %}
+    {{form}}
+    <div>
+        <button>Guardar</button>
+    </div>
+</form>
+{% endblock %}

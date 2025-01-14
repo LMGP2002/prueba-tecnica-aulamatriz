@@ -1,0 +1,31 @@
+<!-- Layout base que define la estructura de todos los templates -->
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Tareas</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <nav class="nav">
+        <h1>Gestión Tareas</h1>
+        <ul>
+            <li>
+                <a class="nav-links" href="/">Listar</a>
+            </li>
+            <li>
+                <a class="nav-links" href="/crear">Crear</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

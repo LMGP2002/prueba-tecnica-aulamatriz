@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* Estilos para el template layout y listar */
+
+:root {
+  --main-color: rgb(128, 89, 146);
+  --second-color: rgb(140, 112, 153);
+  --third-color: rgb(74, 31, 94);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", serif;
+}
+
+.nav {
+  color: var(--main-color);
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  padding: 20px;
+  justify-content: space-between;
+  box-shadow: 0px 10px 5px 0px rgba(209, 209, 209, 1);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  margin: 1rem;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+
+.nav-links:hover {
+  color: var(--main-color);
+}
+
+.container {
+  padding: 40px;
+  width: 100vw;
+  height: 85vh;
+}
+
+.title {
+  text-align: center;
+  color: rgb(63, 63, 63);
+  font-size: 2rem;
+}
+
+.cards {
+  display: inline-flex;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  border-radius: 30px;
+}
+
+.cards:hover {
+  background-color: var(--third-color);
+}
+
+.cards-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para el template actualizar y eliminar y crear */
+
+.update-container {
+  width: 100%;
+}
+
+input{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+
+
+.form-crear div{
+    margin: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+textarea{
+    width: 60%;
+    height: 65px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+button:hover{
+    background-color: var(--second-color);
+}
+
+.update-delete-buttons{
+    display: flex;
+    justify-content: center;
+}
+.update-delete-buttons button{
+    background-color: rgb(214, 104, 104);
+}
+
+.update-delete-buttons button:hover{
+    background-color: rgb(184, 52, 52);
+}
+

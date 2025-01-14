@@ -1,0 +1,20 @@
+<!-- Template para listar tareas -->
+
+
+{% extends 'layout.html' %} 
+{% block content %}
+<section>
+  <h2 class="title">Tareas</h2>
+
+  <ul class="cards-container">
+    {% for tarea in tareas %}
+    <li>
+      <a class="cards" href="{% url 'modificar' tarea.id %}"
+        >{{tarea.titulo}}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% endblock %}

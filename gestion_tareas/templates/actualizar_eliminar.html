@@ -1,0 +1,32 @@
+<!-- Template para actualizar y eliminar tareas -->
+
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<section class="update-container">
+
+    <h2 class="title">Tarea a actualizar: {{tarea.titulo}}</h2>
+
+
+    <form method="post" class="form-crear">
+        {% csrf_token %}
+        {{form}}
+        <button>Actualizar</button>
+    </form>
+
+    <div class="update-delete-buttons">
+        <form action="{% url 'eliminar' tarea.id %}" method="post">
+            {% csrf_token %}
+        
+            <button>Eliminar</button>
+        </form>
+    </div>
+    
+    
+
+
+</section>
+
+
+{% endblock %}
