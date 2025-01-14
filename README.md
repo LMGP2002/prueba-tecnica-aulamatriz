@@ -171,5 +171,5 @@ Este proyecto es extensible y permite agregar más funcionalidades, como notific
 
 ---
 
-**Autor**: [Tu Nombre]  
-**Última Actualización**: [Fecha]
+**Autor**: Luis Miguel Guerrero  
+**Última Actualización**: 13/01/2025
